@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+
+    <item
+        android:id="@+id/agregarCarrito"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_agregar_carrito"
+        android:title="Agregar Carrito"/>
+
+    <item
+        android:id="@+id/irCarrito"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_carrito"
+        android:title="Carrito"/>
+
+</menu>
