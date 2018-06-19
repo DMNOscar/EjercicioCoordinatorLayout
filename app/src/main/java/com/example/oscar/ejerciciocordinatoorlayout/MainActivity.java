@@ -33,9 +33,5 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(mActionBarToolbar);
         getSupportActionBar().setTitle("¿Qué es Lorem Ipsum?");
         getSupportActionBar().setSubtitle("About");
-
-
-
-
     }
 }
