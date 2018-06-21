@@ -11,12 +11,18 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.Toast;
+
+import butterknife.BindView;
 
 import static com.example.oscar.ejerciciocordinatoorlayout.R.menu.menu_compra_tool_bar;
 
 public class MainActivity extends AppCompatActivity {
-    int sheetBehavior;
+
+
+    LinearLayout layoutBottomSheet;
+    BottomSheetBehavior sheetBehavior;
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -41,7 +47,11 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setTitle("¿Qué es Lorem Ipsum?");
         //getSupportActionBar().setSubtitle("About");
 
-        sheetBehavior = BottomSheetBehavior.PEEK_HEIGHT_AUTO;
+
+        LinearLayout llBottomSheet = (LinearLayout) findViewById(R.id.bottom_sheet);
+
+        sheetBehavior = BottomSheetBehavior.from(llBottomSheet);
+
         Button mensaje = (Button) findViewById(R.id.Mensaje);
 
         mensaje.setOnClickListener(new View.OnClickListener() {
@@ -67,16 +77,16 @@ public class MainActivity extends AppCompatActivity {
         fbVentana.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-              //  if(sheetBehavior.getState() != BottomSheetBehavior.STATE_EXPANDED){
+                if(sheetBehavior.getState() != BottomSheetBehavior.STATE_EXPANDED){
 
-            //        sheetBehavior.setState(BottomSheetBehavior.STATE_EXPANDED);
-//
-             //   } else {
-             //       sheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
+                  sheetBehavior.setState(BottomSheetBehavior.STATE_EXPANDED);
+
+               } else {
+                   sheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
 
 
                 }
-          //  }
+        }
         });
     }
 }
