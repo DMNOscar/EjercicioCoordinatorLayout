@@ -61,23 +61,30 @@
         android:layout_margin="12dp"
         android:background="@color/colorAccent"
         android:src="@drawable/ic_editar_perfil"
+
         app:layout_scrollFlags="enterAlways"
         app:layout_anchor="@id/appBar"
         app:layout_anchorGravity="bottom|right|end" />
-<android.support.v4.widget.NestedScrollView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    >
-    <TextView
+
+
+    <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/cuerpo"
-        android:textSize="16sp"
-        android:layout_margin="8dp"
-        android:lineSpacingMultiplier="1.5"
-         />
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/Mensaje"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:text="Menaje"
+        android:textAllCaps="false"
+        android:layout_gravity="bottom|center"
+        />
+
 </android.support.v4.widget.NestedScrollView>
 
-
+    <include layout="@layout/botton_seet" />
 </android.support.design.widget.CoordinatorLayout>
