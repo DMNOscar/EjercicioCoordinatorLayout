@@ -8,4 +8,11 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
+
+    <style name="StiloBotonLogin">
+        <item name="colorControlHighlight">@color/colorAzulOscuroBoton</item>
+        <item name="colorButtonNormal">@color/colorAzulBoton </item>
+    </style>
+
 </resources>

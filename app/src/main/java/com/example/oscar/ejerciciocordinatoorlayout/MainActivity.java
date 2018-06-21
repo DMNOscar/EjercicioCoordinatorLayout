@@ -1,6 +1,8 @@
 package com.example.oscar.ejerciciocordinatoorlayout;
 
+import android.content.Intent;
 import android.support.design.widget.BottomSheetBehavior;
+import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -25,16 +27,16 @@ public class MainActivity extends AppCompatActivity {
     LinearLayout layoutBottomSheet;
     BottomSheetBehavior sheetBehavior;
     int i=0;
-
+    @ CoordinatorLayout.DefaultBehavior (FloatingActionButton.Behavior.class)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.tabs_activity);
 
-     Toolbar mActionBarToolbar = (Toolbar) findViewById(R.id.toolBar);
+ /*     Toolbar mActionBarToolbar = (Toolbar) findViewById(R.id.toolBar);
         setSupportActionBar(mActionBarToolbar);
-        getSupportActionBar().setTitle("¿Qué es Lorem Ipsum?");
-        //getSupportActionBar().setSubtitle("About");
+        getSupportActionBar().setTitle("Seleciona una fecha");
+        getSupportActionBar().setSubtitle("About");
 
 
         LinearLayout llBottomSheet = (LinearLayout) findViewById(R.id.bottom_sheet);
@@ -57,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button mensaje = (Button) findViewById(R.id.Mensaje);
+        FloatingActionButton mensaje = (FloatingActionButton) findViewById(R.id.Mensaje);
 
         mensaje.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         final EditText textoComentario= (EditText) findViewById(R.id.edtComentario);
+
         Button opinion = (Button) findViewById(R.id.btnExtraerTexto);
         opinion.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -82,6 +85,8 @@ public class MainActivity extends AppCompatActivity {
         fbVentana.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+
                 if(sheetBehavior.getState() != BottomSheetBehavior.STATE_EXPANDED){
 
                   sheetBehavior.setState(BottomSheetBehavior.STATE_EXPANDED);
@@ -91,6 +96,6 @@ public class MainActivity extends AppCompatActivity {
 
                 }
         }
-        });
+        });*/
     }
 }
