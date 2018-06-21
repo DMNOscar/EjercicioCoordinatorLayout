@@ -7,9 +7,10 @@
     android:background="#fff"
     android:orientation="vertical"
     android:padding="@dimen/activity_margin"
+    android:elevation="6dp"
 
-
-    app:behavior_hideable="true"
+    app:layout_scrollFlags="enterAlways"
+    app:behavior_hideable="false"
     app:behavior_peekHeight="56dp"
     app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
     <!--> layout_behavior: este atributo hace que el diseño actúe como la hoja inferior. El valor debe ser android.support.design.widget.BottomSheetBehavior
@@ -21,6 +22,7 @@
         android:layout_height="wrap_content"
         android:textSize="19sp"
         android:text="Mas informacion"
+        android:textStyle="bold"
         android:layout_margin="@dimen/activity_margin"
         />
 
@@ -49,11 +51,19 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Algo sobre la imagen: Esta bien chistosa XD"
+        android:text="Mensiona algo sobre la imagen"
         android:gravity="center"
         android:layout_margin="@dimen/activity_margin"
         />
-    <Button
+
+    <EditText
+        android:id="@+id/edtComentario"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Tu opinion"
+        />
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnExtraerTexto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
