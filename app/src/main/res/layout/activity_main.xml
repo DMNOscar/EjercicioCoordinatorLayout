@@ -45,6 +45,16 @@
                 android:src="@drawable/ic_usuario_imagen"
                 app:layout_collapseMode="parallax" />
 
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btnCambiarImagen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cambiar Portada"
+                android:textAllCaps="false"
+                android:layout_gravity="bottom|center"
+                app:layout_collapseMode="parallax"
+                />
+
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolBar"
                 android:layout_width="match_parent"

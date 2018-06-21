@@ -11,6 +11,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
@@ -23,19 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
     LinearLayout layoutBottomSheet;
     BottomSheetBehavior sheetBehavior;
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-
-        getMenuInflater().inflate(R.menu.menu_compra_tool_bar, menu);
-
-        MenuItem agregarCarrito, carrito;
-
-        agregarCarrito = (MenuItem) findViewById(R.id.agregarCarrito);
-        carrito= (MenuItem) findViewById(R.id.irCarrito);
-
-        return true;
-    }
+    int i=0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +40,22 @@ public class MainActivity extends AppCompatActivity {
         LinearLayout llBottomSheet = (LinearLayout) findViewById(R.id.bottom_sheet);
 
         sheetBehavior = BottomSheetBehavior.from(llBottomSheet);
+
+        final ImageView imagenPortada= (ImageView) findViewById(R.id.imgPortada);
+        Button cambiarImagen = (Button) findViewById(R.id.btnCambiarImagen);
+        cambiarImagen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(i==0){
+                    imagenPortada.setImageResource(R.drawable.portadados);
+                    i=1;
+                }else{
+                    imagenPortada.setImageResource(R.drawable.img_portada);
+                    i=0;
+                }
+
+            }
+        });
 
         Button mensaje = (Button) findViewById(R.id.Mensaje);
 
@@ -83,7 +88,6 @@ public class MainActivity extends AppCompatActivity {
 
                } else {
                    sheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
-
 
                 }
         }
