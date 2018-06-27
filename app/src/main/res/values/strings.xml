@@ -22,4 +22,12 @@ Vestibulum auctor at nulla sit amet maximus. Nam venenatis interdum augue, sed c
 Etiam maximus hendrerit felis, sed lobortis nisi volutpat vitae. Aenean dignissim tortor ex, eu congue est hendrerit sit amet. Nulla non est a mi porttitor dictum nec quis sem. Quisque convallis enim quis scelerisque finibus. Donec et laoreet metus. Morbi accumsan leo urna, et commodo turpis fringilla eget. Morbi semper semper lobortis. Proin dolor diam, aliquam lacinia lacus sit amet, facilisis ornare odio. Aenean rutrum magna sed est gravida malesuada. Fusce placerat odio nibh, ac hendrerit turpis dapibus vitae.
 
 Proin imperdiet elit eget neque cursus sagittis. Aenean facilisis, enim ac consequat consectetur, est ante volutpat justo, in porta sapien neque eget lorem. Maecenas vestibulum metus felis, eu pretium diam commodo ac. Morbi varius ultrices purus. Sed id porta dui. Integer mi lorem, mattis sit amet odio id, tristique mattis nisl. Integer et lacus ut dui venenatis mollis. Maecenas metus ipsum, dictum non eros eget, pretium tempor diam. Duis ante eros, condimentum in hendrerit id, dapibus eget massa. Aliquam erat volutpat. Vestibulum sit amet leo vel turpis semper tristique vel id dolor. Fusce suscipit, urna et hendrerit suscipit, magna arcu iaculis neque, vitae elementum felis dui et nunc. Suspendisse mollis eros sed urna sagittis accumsan.</string>
+
+    //Texto deejmplo para visualizar el formato del texto
+    <string name="texto_ejemplo">Texto Ejemplo</string>
+    <string name="cantidad_ejemplo">$1000</string>
+    <string name="total">Total:</string>
+    <string name="calve_cliente">Calve cliente</string>
+
+
 </resources>

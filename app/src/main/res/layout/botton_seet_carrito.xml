@@ -2,7 +2,7 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/bottom_sheet"
+    android:id="@+id/bottom_sheet_carrito"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="#fff"
@@ -11,7 +11,7 @@
     android:elevation="6dp"
 
     app:layout_scrollFlags="enterAlways"
-    app:behavior_hideable="true"
+    app:behavior_hideable="false"
     app:behavior_peekHeight="56dp"
     app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
     <!--> layout_behavior: este atributo hace que el diseño actúe como la hoja inferior. El valor debe ser android.support.design.widget.BottomSheetBehavior

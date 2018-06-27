@@ -12,5 +12,7 @@
     <color name="colorAzulBoton">#3e4095</color>
     <color name="colorAzulOscuroBoton">#1d1f6b</color>
 
+    <color name="colorNegro">#000000</color>
+
 
 </resources>
